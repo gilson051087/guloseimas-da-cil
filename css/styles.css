@@ -145,3 +145,54 @@ body {
   border-radius: 15px;
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header img {
+  width: 100px;
+  height: auto;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.product-card {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 480px) {
+  .product-card {
+    flex: 1 1 100%;
+  }
+}
+.contact-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+.contact-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.contact-button:hover {
+  background-color: #25D366; /* Cor do WhatsApp */
+  transform: scale(1.1);
+}
