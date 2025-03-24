@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 body {
-  background: linear-gradient(135deg, #fff5f7 0%, #ffe4e9 100%);
+  background: linear-gradient(135deg, #f5e1e1 0%, #fce8e8 100%); /* Degradê menos chamativo */
   color: #4a4a4a;
   line-height: 1.6;
   display: flex;
@@ -36,7 +36,7 @@ body {
   text-align: left;    /* Alinha o texto à esquerda */
   gap: 20px;
   padding: 30px 0;
-  background: linear-gradient(135deg, #ffcdd2 0%, #f8bbd0 100%);
+  background: linear-gradient(135deg, #f7d6d7 0%, #fce7e8 100%); /* Degradê mais suave para o cabeçalho */
   border-radius: 15px;
   margin-bottom: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -120,6 +120,14 @@ body {
   color: #757575;
 }
 
+/* Estilo dos textos dos produtos */
+.product-card h3,
+.product-card p {
+  background: #fffaf0; /* Tom suave para o fundo branco dos textos */
+  padding: 10px;
+  border-radius: 8px;
+}
+
 /* Botões de contato */
 .contact-buttons {
   display: flex;
@@ -130,7 +138,7 @@ body {
 
 .contact-button {
   padding: 12px 25px;
-  background: linear-gradient(45deg, #d81b60, #ec407a);
+  background: linear-gradient(45deg, #f6b5b5, #f7c6c6); /* Degradê delicado para os botões de contato */
   color: white;
   border: none;
   border-radius: 50px;
@@ -142,7 +150,7 @@ body {
 .footer {
   text-align: center;
   padding: 20px 0;
-  background: linear-gradient(135deg, #f8bbd0 0%, #ffcdd2 100%);
+  background: linear-gradient(135deg, #fce7e8 0%, #f7d6d7 100%); /* Degradê mais suave para o rodapé */
   border-radius: 15px;
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -205,8 +213,9 @@ body {
     flex: 1 1 100%; /* Garante que cada card ocupe toda a largura */
   }
   .product-card img {
-    width: 70%; /* Imagens menores */
-    margin: auto; /* Centralizadas */
+    display: block;      /* Garante que a margem automática centralize a imagem */
+    width: 70%;          /* Imagens menores */
+    margin: 10px auto 0; /* Adicionado margin-top para deslocar a imagem para baixo */
     border-radius: 15px; /* Bordas arredondadas */
   }
   .contact-button {
@@ -214,10 +223,11 @@ body {
     font-size: 14px;
   }
   .copos img {
-    width: 70%;         /* Tamanho reduzido */
-    display: block;     /* Necessário para centralização */
-    margin: 0 auto;     /* Centralizadas */
-    border-radius: 15px;/* Bordas arredondadas */
+    display: block;      /* Garante que a margem automática centralize a imagem */
+    width: 70%;          /* Tamanho reduzido */
+    display: block;      /* Garante que a margem automática centralize a imagem */
+    margin: 10px auto 0; /* Adicionado margin-top para deslocar a imagem para baixo */
+    border-radius: 15px; /* Bordas arredondadas */
   }
 }
 .contact-buttons {
@@ -228,8 +238,9 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   transition: background-color 0.3s, transform 0.3s;
+  background: linear-gradient(45deg, #25D366, #128c7e); /* Botão do Whats mais chamativo */
 }
 .contact-button:hover {
-  background-color: #25D366; /* Cor do WhatsApp */
+  background-color: #128c7e; /* Cor alterada no hover para realçar o efeito */
   transform: scale(1.1);
 }
