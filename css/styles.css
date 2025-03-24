@@ -1,0 +1,147 @@
+/* Configurações gerais e reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  background: linear-gradient(135deg, #fff5f7 0%, #ffe4e9 100%);
+  color: #4a4a4a;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px 0;
+  background: linear-gradient(135deg, #ffcdd2 0%, #f8bbd0 100%);
+  border-radius: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.header img:hover {
+  transform: scale(1.05);
+}
+
+.header h1 {
+  margin-top: 15px;
+  color: #d81b60;
+  font-size: 4.5rem; /* Aumentado de 2.5rem para 3.5rem */
+  font-family: 'Pacifico', cursive; /* Fonte estilosa */
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Adicionado efeito de transição */
+}
+
+.header h1:hover {
+  transform: scale(1.1); /* Efeito dinâmico ao passar o mouse */
+}
+
+/* Descrição principal */
+.container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  color: #6a6a6a;
+  font-style: italic;
+}
+
+/* Estilo dos produtos */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto; /* Alterado de 200px para auto */
+  object-fit: cover;
+  /* Removida a borda inferior */
+}
+
+.product-card h3 {
+  padding: 20px 20px 10px;
+  color: #d81b60;
+  font-size: 1.3rem;
+}
+
+.product-card p {
+  padding: 0 20px 20px;
+  color: #757575;
+}
+
+/* Botões de contato */
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-button {
+  padding: 12px 25px;
+  background: linear-gradient(45deg, #d81b60, #ec407a);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(135deg, #f8bbd0 0%, #ffcdd2 100%);
+  border-radius: 15px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
